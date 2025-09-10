@@ -1,0 +1,7 @@
+.env
+
+# JupyterLab files
+**/.ipynb_checkpoints
+src/.ipython
+src/.jupyter
+src/.local

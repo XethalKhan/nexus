@@ -1,0 +1,11 @@
+version: '3.8'
+services:
+  jupyter:
+    image: quay.io/jupyter/datascience-notebook:2025-09-08
+    ports:
+      - "8888:8888"
+    volumes:
+      - ./src:/home/jovyan
+    environment:
+      - JUPYTER_ENABLE_LAB=yes
+    restart: unless-stopped
